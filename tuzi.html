@@ -8,123 +8,135 @@
     <title>Document</title>
 </head>
 <style>
-    *{
+    * {
         margin: 0;
         padding: 0;
     }
-    .canvas{
+
+    .canvas {
         display: block;
         position: absolute;
         top: 200px;
         left: 200px;
         animation-duration: 2s;
     }
-    @keyframes jump{
-        0%{
-            top:200px;
+
+    @keyframes jump {
+        0% {
+            top: 200px;
         }
-        50%{
-            top:150px
+
+        50% {
+            top: 150px
         }
-        100%{
-            top:200px
+
+        100% {
+            top: 200px
         }
+    }
+
+    h1 {
+        text-align: center;
+        margin-top: 100px;
     }
 </style>
+
 <body>
     <canvas class='canvas' width="252px" height="330px"></canvas>
+    <h1>按空格跳</h1>
 </body>
 <script>
-    var canvas=document.querySelector('.canvas')
-    var paint=canvas.getContext('2d')
+    var canvas = document.querySelector('.canvas')
+    var paint = canvas.getContext('2d')
     paint.beginPath()
-    paint.moveTo(90,107)
-    paint.quadraticCurveTo(67,145,95,173);
+    paint.moveTo(90, 107)
+    paint.quadraticCurveTo(67, 145, 95, 173);
     paint.lineWidth = 3;
     paint.stroke()
-    paint.quadraticCurveTo(131,185,173,173)
+    paint.quadraticCurveTo(131, 185, 173, 173)
     paint.stroke()
-    paint.quadraticCurveTo(192,140,171,104)
+    paint.quadraticCurveTo(192, 140, 171, 104)
     paint.stroke()
-    paint.quadraticCurveTo(206,46,181,33)
+    paint.quadraticCurveTo(206, 46, 181, 33)
     paint.stroke()
-    paint.quadraticCurveTo(152,42,150,96)
+    paint.quadraticCurveTo(152, 42, 150, 96)
     paint.stroke()
-    paint.quadraticCurveTo(131,92,111,102)
+    paint.quadraticCurveTo(131, 92, 111, 102)
     paint.stroke()
-    paint.quadraticCurveTo(110,41,91,39)
+    paint.quadraticCurveTo(110, 41, 91, 39)
     paint.stroke()
-    paint.quadraticCurveTo(60,55,90,107)
-    paint.stroke()
-    paint.beginPath()
-    paint.moveTo(121,99)
-    paint.quadraticCurveTo(132,116,140,95)
+    paint.quadraticCurveTo(60, 55, 90, 107)
     paint.stroke()
     paint.beginPath()
-    paint.moveTo(78,136)
-    paint.quadraticCurveTo(95,141,84,155)
+    paint.moveTo(121, 99)
+    paint.quadraticCurveTo(132, 116, 140, 95)
     paint.stroke()
     paint.beginPath()
-    paint.moveTo(182,149)
-    paint.quadraticCurveTo(166,141,182,132)
+    paint.moveTo(78, 136)
+    paint.quadraticCurveTo(95, 141, 84, 155)
     paint.stroke()
     paint.beginPath()
-    paint.arc(111,139,3,0,360/180*Math.PI,false) 
+    paint.moveTo(182, 149)
+    paint.quadraticCurveTo(166, 141, 182, 132)
+    paint.stroke()
+    paint.beginPath()
+    paint.arc(111, 139, 3, 0, 360 / 180 * Math.PI, false)
     paint.fill()
     paint.beginPath()
-    paint.arc(151,138,3,0,360/180*Math.PI,false) 
+    paint.arc(151, 138, 3, 0, 360 / 180 * Math.PI, false)
     paint.fill()
     paint.beginPath()
-    paint.moveTo(100,175)
-    paint.quadraticCurveTo(70,172,67,175)
+    paint.moveTo(100, 175)
+    paint.quadraticCurveTo(70, 172, 67, 175)
     paint.stroke()
-    paint.quadraticCurveTo(55,185,70,193)
+    paint.quadraticCurveTo(55, 185, 70, 193)
     paint.stroke()
-    paint.quadraticCurveTo(80,197,81,193)
+    paint.quadraticCurveTo(80, 197, 81, 193)
     paint.stroke()
-    paint.quadraticCurveTo(75,252,81,277)
+    paint.quadraticCurveTo(75, 252, 81, 277)
     paint.stroke()
-    paint.quadraticCurveTo(89,282,94,277)
+    paint.quadraticCurveTo(89, 282, 94, 277)
     paint.stroke()
-    paint.quadraticCurveTo(95,272,97,259)
+    paint.quadraticCurveTo(95, 272, 97, 259)
     paint.stroke()
-    paint.quadraticCurveTo(148,260,174,250)
+    paint.quadraticCurveTo(148, 260, 174, 250)
     paint.stroke()
-    paint.quadraticCurveTo(183,257,199,262)
+    paint.quadraticCurveTo(183, 257, 199, 262)
     paint.stroke()
-    paint.quadraticCurveTo(216,265,205,249)
+    paint.quadraticCurveTo(216, 265, 205, 249)
     paint.stroke()
-    paint.quadraticCurveTo(183,222,174,194)
+    paint.quadraticCurveTo(183, 222, 174, 194)
     paint.stroke()
-    paint.quadraticCurveTo(186,189,191,190)
+    paint.quadraticCurveTo(186, 189, 191, 190)
     paint.stroke()
-    paint.quadraticCurveTo(200,183,193,175)
+    paint.quadraticCurveTo(200, 183, 193, 175)
     paint.stroke()
-    paint.lineTo(170,174)
-    paint.stroke()
-    paint.beginPath()
-    paint.moveTo(124,179)
-    paint.quadraticCurveTo(131,200,140,178)
+    paint.lineTo(170, 174)
     paint.stroke()
     paint.beginPath()
-    paint.moveTo(131,215)
-    paint.quadraticCurveTo(118,207,115,217)
+    paint.moveTo(124, 179)
+    paint.quadraticCurveTo(131, 200, 140, 178)
     paint.stroke()
-    paint.quadraticCurveTo(115,229,134,235)
+    paint.beginPath()
+    paint.moveTo(131, 215)
+    paint.quadraticCurveTo(118, 207, 115, 217)
     paint.stroke()
-    paint.quadraticCurveTo(152,223,148,216)
+    paint.quadraticCurveTo(115, 229, 134, 235)
     paint.stroke()
-    paint.quadraticCurveTo(148,210,131,215)
+    paint.quadraticCurveTo(152, 223, 148, 216)
     paint.stroke()
-    document.onkeyup=function(e){
-        if(e.keyCode==32){
-            
-            canvas.style.animationName='jump';
-            var timer=setTimeout(function(){
-            canvas.style.animationName=''
-        },2000)
+    paint.quadraticCurveTo(148, 210, 131, 215)
+    paint.stroke()
+    document.onkeyup = function (e) {
+        if (e.keyCode == 32) {
+
+            canvas.style.animationName = 'jump';
+            var timer = setTimeout(function () {
+                canvas.style.animationName = ''
+            }, 2000)
         }
-        
+
     }
 </script>
+
 </html>
